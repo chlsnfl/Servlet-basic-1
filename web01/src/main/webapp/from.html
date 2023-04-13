@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<style>
+.main{
+	width : 500px;
+	height : 100%;
+	margin : auto;
+	text-align : center;
+}
+textarea{
+	width : 450px;
+	height : 250px;
+}
+p{
+	color : blue;
+	font-weight : bold;
+}
+span:hover{
+	font-weight : bold;
+}
+.ok, .cancel{
+	margin: auto;
+	text-align : center;
+	width : 200px;
+	height : 30px;
+	background : #ddd;
+	color : #fff;
+	cursor : pointer;
+}
+.ok, .cancel:hover{
+	background : #333;
+	}
+.ok{
+	margin-top : 50px;
+	margin-bottom : 30px;
+}
+
+</style>
+</head>
+<body>
+<div class = "main">
+<form name = form action ="/web01/EchoData" method="post">
+<h4>이름
+<input type = text>
+<button type = button>확인</button>
+</h4>
+<h4>암호
+<input type = password>
+<button type = button>확인</button></h4>
+</br>
+<label>
+<p>성별을 선택해주세요</p>
+<input type =radio name = sex value = "female" class = "id">
+<span>female</span>
+<input type =radio name = sex value = "female" class = "password">
+<span>male</span>
+
+</br>
+</br>
+
+<p>선호하시는 편집기는 무엇인가요?</p>
+<input type = checkbox value = "eclipse">
+<span>eclipse</span>
+<input type = checkbox value = "vscode">
+<span>vscode</span>
+<input type = checkbox value = "jbuilder">
+<span>jbuilder</span>
+</label>
+</br>
+</br>
+
+<p>현재 사용중인 운영체제는 무엇인가요?</p>
+<input type = select>
+</label>
+</br>
+</br>
+<p>남길 말씀...</p>
+<textarea>하실 말씀이 있으시다면 참으세용!</textarea>
+</form>
+<div class = "ok">확인</div>
+<div class = "cancel">취소</div>
+</div>
+</body>
+</html>
